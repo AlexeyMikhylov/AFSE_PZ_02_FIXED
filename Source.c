@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <malloc.h>
 #include <stdlib.h>
 
@@ -65,7 +65,8 @@ int findMinMaxOfArray(void)
 			minArrayElement = array[i];
 		}
 	}
-	
+	 
+	//для размера массивов, т.к. индексация с нуля
 	minArrayElement--;
 	maxArrayElement++;
 
