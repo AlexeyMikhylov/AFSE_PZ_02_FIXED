@@ -69,7 +69,7 @@ int findMinMaxOfArray(void)
 	minArrayElement--;
 	maxArrayElement++;
 
-	printf("min: %d\nmax: %d\n", minArrayElement, maxArrayElement);
+	//printf("min: %d\nmax: %d\n", minArrayElement, maxArrayElement);
 }
 
 int sortArray(void)
