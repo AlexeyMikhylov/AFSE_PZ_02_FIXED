@@ -89,7 +89,7 @@ int sortArray(void)
 
 	for (int i = 1; i < abs(minArrayElement); i++)
 	{
-		for (int j = 0; j < arraySize; j++)
+		for (int j = 0; j < arraySize; j++) 
 		{
 			if (-i == array[j])
 			{
