@@ -77,7 +77,7 @@ int sortArray(void)
 {
 	findMinMaxOfArray();
 
-	// from min to zero without zero
+	// от наименьшего до нуля, не включая ноль
 	countingArrayNeg = (int*)malloc(abs(minArrayElement) * sizeof(int));
 	
 	for (int i = 0; i < abs(minArrayElement); i++)
@@ -95,7 +95,7 @@ int sortArray(void)
 		}
 	}
 
-	// from zero to max
+	// от нуля до наибольшего
 	countingArrayPos = (int*)malloc(maxArrayElement * sizeof(int));
 
 	for (int i = 0; i < maxArrayElement; i++)
@@ -114,10 +114,10 @@ int sortArray(void)
 		}
 	}
 
-	//output of sorted array
+	//Вывод отсортированного массива
 	printf("\nSorted array:\n\n  ");
 
-	// negatives
+	// от минимального до 0 не включительно
 	for (int i = abs(minArrayElement); i > 0; i--)
 	{
 		for (int j = 0; j < countingArrayNeg[i]; j++)
@@ -126,7 +126,7 @@ int sortArray(void)
 		}
 	}
 	
-	// positives
+	// от нуля до максимального
 	for (int i = 0; i < maxArrayElement; i++)
 	{
 		for (int j = 0; j < countingArrayPos[i]; j++)
