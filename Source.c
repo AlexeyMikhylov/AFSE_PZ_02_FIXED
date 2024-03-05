@@ -7,7 +7,7 @@
 int array[MAX_SIZE_OF_ARRAY];
 int maxArrayElement = 0, minArrayElement = 0, arraySize = 0;
 int* countingArrayPos;
-int* countingArrayNeg; 
+int* countingArrayNeg;
 
 int main()
 {
