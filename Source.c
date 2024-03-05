@@ -18,6 +18,7 @@ int main()
 
 int getArrayFromFile(void)
 {
+	//считываем массив из файла
 	FILE* file = fopen("input.txt", "r");
 
 	if (file != NULL)
@@ -40,6 +41,7 @@ int getArrayFromFile(void)
 
 int outputArray(void)
 {
+	//вывод полученного из файла массива
 	printf("Original array:\n\n  ");
 	for (int i = 0; i < arraySize; i++)
 	{
@@ -140,6 +142,7 @@ int sortArray(void)
 
 int finish(void)
 {
+	//освобождение памяти
 	free(countingArrayNeg);
 	free(countingArrayPos);
 }
