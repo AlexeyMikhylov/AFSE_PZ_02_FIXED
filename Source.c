@@ -45,7 +45,7 @@ int outputArray(void)
 	{
 		printf("%d  ", array[i]);
 	}
-	printf("\n\n");
+	printf("\n");
 }
 
 int findMinMaxOfArray(void)
