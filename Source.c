@@ -7,11 +7,16 @@
 int array[MAX_SIZE_OF_ARRAY];
 int arraySize = 0;
 
+void arraySplitter(int array[], int arrayLen);
+
 int main()
 {
 	getArrayFromFile();
 
-	printf("%d", isSorted(array, 0, arraySize));
+	/*while (isSorted(array, 0, arraySize) != 0)
+	{
+		mergeSort(array, arraySize);
+	}*/
 
 	mergeSort(array, arraySize);
 
@@ -129,11 +134,6 @@ int mergeSort(int array[], int arrayLen)
 
 	free(Larr);
 	free(Rarr);
-
-	while (isSorted(array, 0, arraySize) != 0)
-	{
-		mergeSort(array, arraySize);
-	}
 }
 
 int isSorted(int array[], int i, int arraylen)
@@ -153,11 +153,6 @@ int isSorted(int array[], int i, int arraylen)
 }
 
 int mergeSortRecursion(int array[], int l, int r)
-{
-
-}
-
-void mergeSortedArrays(int array[], int l, int m, int r)
 {
 
 }
